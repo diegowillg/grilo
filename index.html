@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grilo Surf: moda surfwear e casual com estilo, conforto e atitude."
+    />
+
+    <title>Grilo Surf | Moda Surfwear e Casual</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header class="site-header fixed top-0 left-0 w-full z-50">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <a href="#inicio" aria-label="Ir para o início">
+          <img
+            src="img/logo.png"
+            alt="Logo Grilo Surf"
+            class="h-16 w-auto logo-site rounded-3xl"
+          />
+        </a>
+
+        <nav class="hidden md:flex gap-6 text-sm font-medium text-neutral-300">
+          <a href="#sobre" class="menu-link">Sobre</a>
+          <a href="#fotos" class="menu-link">Fotos</a>
+          <a href="#localizacao" class="menu-link">Localização</a>
+          <a href="#contato" class="menu-link">Contato</a>
+        </nav>
+
+        <a href="#contato" class="btn-yellow text-sm h-10"> Falar conosco </a>
+      </div>
+    </header>
+
+    <!-- Apresentação -->
+    <section id="inicio" class="hero-section pt-32 pb-20 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="content-reveal">
+          <span class="tag-yellow"> Moda surfwear e casual </span>
+
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            Estilo, atitude e conforto para o seu dia a dia
+          </h1>
+
+          <p class="text-lg text-neutral-300 mb-8 leading-relaxed">
+            Conheça a Grilo Surf, uma loja de roupas com peças selecionadas para
+            quem busca visual moderno, casual e cheio de personalidade.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#fotos" class="btn-yellow text-center"> Ver modelos </a>
+
+            <a href="#localizacao" class="btn-outline-yellow text-center">
+              Como chegar
+            </a>
+          </div>
+        </div>
+
+        <div class="photo-frame content-reveal delay-1">
+          <img
+            src="img/fachada.png"
+            alt="Foto principal da loja Grilo Surf"
+            class="rounded-2xl w-full h-[480px] object-cover"
+          />
+        </div>
+      </div>
+      <!-- Faixas animadas -->
+      <div class="hero-stripes">
+        <div class="stripe stripe-one"></div>
+        <div class="stripe stripe-two"></div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 px-6 section-dark">
+      <div class="max-w-5xl mx-auto text-center content-reveal">
+        <span class="section-label">Nossa essência</span>
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Sobre a Grilo Surf</h2>
+
+        <p class="text-neutral-300 text-lg leading-relaxed max-w-3xl mx-auto">
+          A Grilo Surf nasceu para vestir pessoas que gostam de praticidade,
+          presença e estilo. Aqui você encontra peças para diferentes momentos,
+          com uma curadoria voltada para conforto, personalidade e bom
+          atendimento.
+        </p>
+      </div>
+    </section>
+
+    <!-- Fotos demonstrativas -->
+    <section id="fotos" class="py-20 px-6 bg-black">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12 content-reveal">
+          <span class="section-label">Galeria</span>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Demonstrativos da loja
+          </h2>
+
+          <p class="text-neutral-400">
+            Veja alguns estilos de peças que você encontra na Grilo Surf.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <article class="card-look content-reveal">
+            <img
+              src="img/modelo-2.png"
+              alt="Look casual"
+              class="w-full h-85 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-yellow-400">Linha casual</h3>
+            </div>
+          </article>
+
+          <article class="card-look content-reveal delay-1">
+            <img
+              src="img/modelo-1.png"
+              alt="Moda surfwear"
+              class="w-full h-85 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-yellow-400">Surfwear</h3>
+            </div>
+          </article>
+
+          <article class="card-look content-reveal delay-2">
+            <div class="novidades-slider">
+              <div id="novSlideA" class="nov-slide active"></div>
+              <div id="novSlideB" class="nov-slide"></div>
+            </div>
+
+            <div class="p-5">
+              <h3 class="font-bold text-lg text-yellow-400">Novidades</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização -->
+    <section id="localizacao" class="py-20 px-6 section-dark">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div class="content-reveal">
+          <span class="section-label">Venha visitar</span>
+
+          <h2 class="text-3xl md:text-4xl font-bold mb-5">Nossa localização</h2>
+
+          <p class="text-neutral-300 mb-6 leading-relaxed">
+            Escolha a unidade mais próxima e venha conhecer a Grilo Surf.
+          </p>
+
+          <!-- Botões das lojas -->
+          <div class="lojas-tabs">
+            <button class="loja-tab active" type="button" data-loja="0">
+              Loja Desterro
+            </button>
+
+            <button class="loja-tab" type="button" data-loja="1">
+              Loja Ramid Mauad
+            </button>
+
+            <button class="loja-tab" type="button" data-loja="2">
+              Loja Prudente de Morais
+            </button>
+          </div>
+
+          <!-- Dados da loja -->
+          <div class="info-box space-y-3 text-neutral-300">
+            <h3 id="lojaNome" class="loja-nome">Grilo Surf - Loja Desterro</h3>
+
+            <p>
+              <strong>Endereço:</strong>
+              <span id="lojaEndereco"
+                >Av. Nossa Senhora do Desterro, 115 - Jardim Esplanada</span
+              >
+            </p>
+
+            <p>
+              <strong>Cidade:</strong>
+              <span id="lojaCidade">Uberaba - MG</span>
+            </p>
+
+            <p>
+              <strong>Horário:</strong>
+              <span id="lojaHorario">Segunda a sábado, das 9h às 19h</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="map-frame content-reveal delay-1">
+          <iframe
+            id="lojaMapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.9364551922763!2d-47.906282524018934!3d-19.757854232972697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bacfeaee865049%3A0x9b5884d7a5532f86!2sAv.%20Nossa%20Senhora%20do%20Desterro%2C%20115%20-%20Jardim%20Esplanada%2C%20Uberaba%20-%20MG%2C%2038082-025!5e0!3m2!1spt-BR!2sbr!4v1778338479399!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 px-6 contact-section">
+      <div class="max-w-4xl mx-auto text-center content-reveal">
+        <span class="section-label">Contato</span>
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-5">
+          Fale com a Grilo Surf
+        </h2>
+
+        <p class="text-neutral-300 mb-8 text-lg">
+          Entre em contato pelo WhatsApp ou acompanhe as novidades pelo
+          Instagram.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <button
+            class="btn-yellow btn-whatsapp-popup cursor-pointer"
+            id="abrirPopupWhatsapp"
+            type="button"
+          >
+            Chamar no WhatsApp
+          </button>
+
+          <a
+            href="https://instagram.com/grilo_surf/"
+            target="_blank"
+            class="btn-outline-yellow"
+          >
+            Ver Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer
+      class="bg-black border-t border-yellow-500/20 text-white py-8 px-6 text-center"
+    >
+      <p class="text-sm text-neutral-500">
+        © 2026 Grilo Surf. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <!-- Pop-up WhatsApp -->
+    <div class="popup-whatsapp" id="popupWhatsapp">
+      <div class="popup-whatsapp-box">
+        <button class="popup-close" id="fecharPopupWhatsapp" type="button">
+          ×
+        </button>
+
+        <h3>Escolha uma loja</h3>
+
+        <p>Selecione a unidade que deseja chamar no WhatsApp.</p>
+
+        <div class="popup-buttons">
+          <a
+            href="https://wa.me/5534998629900?text=Olá, gostaria de falar com a Loja Desterro da Grilo Surf"
+            target="_blank"
+          >
+            Loja Desterro
+          </a>
+
+          <a
+            href="https://wa.me/5534998963133?text=Olá, gostaria de falar com a Loja Ramid Mauad da Grilo Surf"
+            target="_blank"
+          >
+            Loja Ramid Mauad
+          </a>
+
+          <a
+            href="https://wa.me/553498639900?text=Olá, gostaria de falar com a Loja Prudente de Morais da Grilo Surf"
+            target="_blank"
+          >
+            Loja Prudente de Morais
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
