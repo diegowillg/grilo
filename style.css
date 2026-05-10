@@ -778,3 +778,98 @@ img {
     height: 4px;
   }
 }
+/* =========================
+   MOBILE MAIS LIMPO - MENOS DOURADO
+========================= */
+
+@media (max-width: 768px) {
+  /* Reduz excesso de brilho dourado */
+  .photo-frame,
+  .map-frame,
+  .card-look,
+  .info-box,
+  .popup-whatsapp-box {
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+  }
+
+  /* Deixa os detalhes dourados mais suaves */
+  .tag-yellow,
+  .section-label {
+    color: #facc15;
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(250, 204, 21, 0.18);
+  }
+
+  /* Títulos principais continuam brancos */
+  h1,
+  h2 {
+    color: #ffffff;
+  }
+
+  /* Títulos dos cards continuam dourados, mas sem exagero */
+  .card-look h3,
+  .loja-nome {
+    color: #facc15;
+  }
+
+  /* Texto normal mais suave */
+  p,
+  .info-box,
+  .text-neutral-300,
+  .text-neutral-400 {
+    color: #d4d4d4;
+  }
+
+  /* Botões principais continuam amarelos */
+  .btn-yellow {
+    background: var(--yellow);
+    color: #000;
+    box-shadow: none;
+  }
+
+  .btn-yellow:hover {
+    background: #ffe45c;
+    box-shadow: none;
+  }
+
+  /* Botões de contorno mais discretos */
+  .btn-outline-yellow {
+    color: var(--yellow);
+    border-color: rgba(250, 204, 21, 0.45);
+    background: transparent;
+  }
+
+  /* Abas das lojas menos chamativas */
+  .loja-tab {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(250, 204, 21, 0.25);
+    color: #facc15;
+  }
+
+  .loja-tab.active {
+    background: var(--yellow) !important;
+    color: #000 !important;
+    border-color: var(--yellow) !important;
+    box-shadow: none;
+  }
+
+  /* Header mais limpo */
+  .site-header {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .logo-site {
+    filter: none;
+  }
+
+  /* Faixas mais suaves no celular */
+  .stripe {
+    background: rgba(250, 204, 21, 0.12);
+    box-shadow: none;
+  }
+
+  .stripe::after {
+    box-shadow: none;
+  }
+}
