@@ -873,3 +873,27 @@ img {
     box-shadow: none;
   }
 }
+@media (max-width: 768px) {
+  .stripe {
+    background: rgba(255, 221, 0, 0.35);
+    box-shadow:
+      0 0 8px rgba(255, 221, 0, 0.28),
+      0 0 18px rgba(255, 221, 0, 0.14);
+  }
+
+  .stripe::after {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 221, 0, 0.08) 15%,
+      rgba(255, 221, 0, 0.25) 35%,
+      rgba(255, 221, 0, 0.55) 60%,
+      rgba(255, 230, 80, 0.95) 82%,
+      #fff36a 100%
+    );
+
+    box-shadow:
+      0 0 10px rgba(255, 230, 80, 0.55),
+      0 0 20px rgba(255, 221, 0, 0.22);
+  }
+}
